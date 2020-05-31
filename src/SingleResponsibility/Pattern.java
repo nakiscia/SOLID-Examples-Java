@@ -51,7 +51,7 @@ class HospitalEmp{
     }
 }
 
-// Now persistence no longer responsibility of Hospital class.
+// Now persistence no longer responsibility of SingleResponsibility.Hospital class.
 class Persistence {
     public void saveToFile(String fileName,HospitalEmp data) throws FileNotFoundException {
         try(PrintStream output = new PrintStream(fileName)){
